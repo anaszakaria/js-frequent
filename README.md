@@ -630,7 +630,7 @@ function findMatch(array, match) {
     for (var i=0; i<match.length; i++) {
         console.log(array[match[i][0]], array[match[i][1]], array[match[i][2]])
         if (array[match[i][0]] == array[match[i][1]] && array[match[i][0]] == array[match[i][2]]) {
-            return 'Found Three \'' + array[match[i][0]] + '\' in Prefined Positions'
+            return 'Found Three \'' + array[match[i][0]] + '\' in Predefined Positions'
         }
     }
     return 'No Match'
@@ -649,7 +649,7 @@ function findMatchDesc(array, match) {
         const [start, middle, end] = match[index]
         console.log(array[start], array[middle], array[end])
         if (array[start] == array[middle] && array[start] == array[end]) {
-            return `Found Three \'${array[start]}\' in Prefined Positions`
+            return `Found Three \'${array[start]}\' in Predefined Positions`
         }
     }
     return 'No Match'
