@@ -482,6 +482,20 @@ console.log(finalObject) // note: sourceObject is a separate object from finalOb
 **Find path of nested object**
 
 ```
+const person = {
+  name: 'Anas',
+  age: 39,
+  address: {
+    home: 'Bangi',
+    office: 'Putrajaya'
+  },
+  children: [
+    { name: 'Wardah', age: 5 },
+    { name: 'Naurah', age: 5 },
+    { name: 'Farhah', age: 1 }
+  ]
+}
+
 function findPath(primitive, object, path = []) {
   for (const [key, value] of Object.entries(object)) {
     if (value === primitive) {
