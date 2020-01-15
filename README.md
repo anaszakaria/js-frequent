@@ -482,37 +482,46 @@ console.log(finalObject) // note: sourceObject is a separate object from finalOb
 **Find path of nested object**
 
 ```
-const person = {
-  name: 'Anas',
-  age: 39,
-  address: {
-    home: 'Bangi',
-    office: 'Putrajaya'
+const projects = [
+  {
+    id: 'DEPT_IT',
+    name: 'Information Technology',
+    child: [
+      { id: 'DB"', name: 'Database' },
+      { id: 'MOB', name: 'Mobile Application' },
+      {
+        id: 'WEB',
+        name: 'Web Application',
+        child: [
+          { id: 'CMIS', name: 'CMIS' },
+          { id: 'EQMP', name: 'EQMP' },
+        ]
+      },
+    ]
   },
-  children: [
-    { name: 'Wardah', age: 5 },
-    { name: 'Naurah', age: 5 },
-    { name: 'Farhah', age: 1 }
-  ]
-}
+  {
+    id: 'DEPT_ENGINEERING',
+    name: 'CEMS'
+  }
+]
 
-function findPath(primitive, object, path = []) {
+function findPath(str, object, path = []) {
   for (const [key, value] of Object.entries(object)) {
-    if (value === primitive) {
-      return [...path, key]
+    if (value === str) {
+      return [...path, value.id ? value.id : null]
     }
-    if (typeof value === 'object' || typeof value === 'function') {
-      const newPath = findPath(primitive, value, [...path, key])
+    if (value instanceof Object || value instanceof Array) {
+      const newPath = findPath(str, value, [...path, value.id ? value.id: null])
       if (newPath) {
-        return newPath
+        return newPath.filter(item => item !== null)
       }
     }
   }
   return null
 }
 
-const path = findPath('Farhah', person)
-console.log(path) // ["children", "2", "name"]
+const path = findPath('EQMP', projects)
+console.log(path) // ["DEPT_IT", "WEB", "EQMP"]
 ```
 
 ## Set
