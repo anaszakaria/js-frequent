@@ -399,21 +399,15 @@ console.log('Info:', info) // default array is not mutated
 **Loop through object and get key value pairs**
 
 ```
-const person = {
-  name: 'Anas',
-  age: 39,
-  address: {
-    home: 'Bangi',
-    office: 'Putrajaya'
-  },
-  children: [
-    { name: 'Wardah', age: 5 },
-    { name: 'Naurah', age: 5 },
-    { name: 'Farhah', age: 1 }
-  ]
+const calculation = {
+  type: 'Numbers',
+  section: {
+    even: [0, 2, 4, 6, 8],
+    odd: [1, 3, 5, 7, 9]
+  }
 }
 
-const objArray = Object.entries(person)
+const objArray = Object.entries(calculation)
 console.log(objArray)
 
 for (const [key, value] of objArray) {
@@ -424,21 +418,39 @@ for (const [key, value] of objArray) {
 **Recursive function - Retrieve nested obj key value**
 
 ```
-function iterateObj(obj) {
-  const array = Object.entries(obj)
-  for (const [key, value] of array) {
-    if (typeof value !== 'object') {
-      console.log(`${key}: ${value}`)
-    } else {
-      console.log(`${key}: `)
-    }
-    if (value instanceof Object || value instanceof Array) {
-      iterateObj(value)
-    }
-  }
+const person = {
+    firstName: 'Anas',
+    lastName: 'Zakaria',
+    age: 39,
+    address: {
+        home: 'Bangi',
+        office: 'Putrajaya'
+    },
+    job: 'Software Developer',
+    skills: [
+        { frontEnd: ['HTML', 'CSS', 'Javacript'] },
+        { backEnd: ['NodeJS', '.Net Core'] },
+        { others: ['Git', 'Webpack'] }
+    ]
 }
 
-iterateObj(person)
+function iterateObj(obj, fn) {
+    const array = Object.entries(obj)
+    for (const [key, value] of array) {
+        fn(key, value)
+        if (value instanceof Object || value instanceof Array) {
+            iterateObj(value, fn)
+        }
+    }
+}
+
+iterateObj(person, (key, value) => {
+    if (typeof value !== 'object') {
+        console.log(`${key}: ${value}`)
+    } else {
+        console.log(`${key} -`)
+    }
+})
 ```
 
 **Convert object to array**
