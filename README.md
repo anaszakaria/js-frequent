@@ -50,7 +50,7 @@ console.log(removeFalseValue(defArray))
 const arrays = [[1, 2, 3, 4, 5], [5, 2, 10]]
 
 const findDifference = (array) => {
-  return arrays.reduce((a, b) => {
+  return array.reduce((a, b) => {
     return a.filter(value => {
       return !b.includes(value) // return b.includes(value) - find similar values [5, 2]
     })
