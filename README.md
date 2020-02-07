@@ -1,9 +1,41 @@
 # js-frequent
 List of frequently used Javascript functions
 
+- Array Filter
+  - Filter array content based on search criteria
+  - Find unique values in array
+  - Remove false value - undefined, null and false
+  - Find differences - returns the values from array that are not present in the other arrays
+  - Sorts an array of object based on an object key provided by a parameter
+  - Non recursive flatten deep using a stack
+  - Find indices of elements in an array
+  - Find boolean value in array - 0, null, undefined will result in false
+- Array Reduce
+  - Find the maximum or minimum collection item
+  - Count instance of values in object
+  - Grouping objects by a property
+  - Bonding arrays contained in an array of objects using the spread operator and initialValue
+  - Remove duplicate items in array
+  - Function composition enabling pipe functionality
+  - Flattened array using recursive function
+  - Filter and Map alternative
+  - Array to Object conversion
+- Array Sort
+  - Sort array by value with options (ascending and descending)
+- Object
+  - Loop through object and get key value pairs
+  - Recursive function - Retrieve nested obj key value
+  - Convert object to array
+  - Merge object into another object and overwrite the original value if exists
+  - Find path of nested object
+- Set
+  - Set operations - Subset, Union, Intersection, Symmetric Difference and Difference
+- Array Destructuring
+  - Tic Tac Toe algorithm comparison
+
 ## Array Filter
 
-**Filter array content based on search criteria**
+### Filter array content based on search criteria
 
 ```
 const fruits = ['apple', 'banana', 'grapes', 'mango', 'orange']
