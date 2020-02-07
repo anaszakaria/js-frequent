@@ -1,37 +1,37 @@
 # js-frequent
 List of frequently used Javascript functions
 
-- Array Filter
-  - Filter array content based on search criteria
-  - Find unique values in array
-  - Remove false value - undefined, null and false
-  - Find differences - returns the values from array that are not present in the other arrays
-  - Sorts an array of object based on an object key provided by a parameter
-  - Non recursive flatten deep using a stack
-  - Find indices of elements in an array
-  - Find boolean value in array - 0, null, undefined will result in false
-- Array Reduce
-  - Find the maximum or minimum collection item
-  - Count instance of values in object
-  - Grouping objects by a property
-  - Bonding arrays contained in an array of objects using the spread operator and initial value
-  - Remove duplicate items in array
-  - Function composition enabling pipe functionality
-  - Flattened array using recursive function
-  - Filter and Map alternative
-  - Array to Object conversion
-- Array Sort
-  - Sort array by value with options (ascending and descending)
-- Object
-  - Loop through object and get key value pairs
-  - Recursive function - Retrieve nested obj key value
-  - Convert object to array
-  - Merge object into another object and overwrite the original value if exists
-  - Find path of nested object
-- Set
-  - Set operations - Subset, Union, Intersection, Symmetric Difference and Difference
-- Array Destructuring
-  - Tic Tac Toe algorithm comparison
+- [Array Filter](https://github.com/anaszakaria/js-frequent#array-filter)
+  - [Filter array content based on search criteria](https://github.com/anaszakaria/js-frequent#filter-array-content-based-on-search-criteria)
+  - [Find unique values in array](https://github.com/anaszakaria/js-frequent#find-unique-values-in-array)
+  - [Remove false value - undefined, null and false](https://github.com/anaszakaria/js-frequent#remove-false-value---undefined-null-and-false)
+  - [Find differences - returns the values from array that are not present in the other arrays](https://github.com/anaszakaria/js-frequent#find-differences---returns-the-values-from-array-that-are-not-present-in-the-other-arrays)
+  - [Sorts an array of object based on an object key provided by a parameter](https://github.com/anaszakaria/js-frequent#sorts-an-array-of-object-based-on-an-object-key-provided-by-a-parameter)
+  - [Non recursive flatten deep using a stack](https://github.com/anaszakaria/js-frequent#non-recursive-flatten-deep-using-a-stack)
+  - [Find indices of elements in an array](https://github.com/anaszakaria/js-frequent#find-indices-of-elements-in-an-array)
+  - [Find boolean value in array - 0, null, undefined will result in false](https://github.com/anaszakaria/js-frequent#find-boolean-value-in-array---0-null-undefined-will-result-in-false)
+- [Array Reduce](https://github.com/anaszakaria/js-frequent#array-reduce)
+  - [Find the maximum or minimum collection item](https://github.com/anaszakaria/js-frequent#find-the-maximum-or-minimum-collection-item)
+  - [Count instance of values in object](https://github.com/anaszakaria/js-frequent#count-instance-of-values-in-object)
+  - [Grouping objects by a property](https://github.com/anaszakaria/js-frequent#grouping-objects-by-a-property)
+  - [Bonding arrays contained in an array of objects using the spread operator and initial value](https://github.com/anaszakaria/js-frequent#bonding-arrays-contained-in-an-array-of-objects-using-the-spread-operator-and-initial-value)
+  - [Remove duplicate items in array](https://github.com/anaszakaria/js-frequent#remove-duplicate-items-in-array)
+  - [Function composition enabling pipe functionality](https://github.com/anaszakaria/js-frequent#function-composition-enabling-pipe-functionality)
+  - [Flattened array using recursive function](https://github.com/anaszakaria/js-frequent#flattened-array-using-recursive-function)
+  - [Filter and Map alternative](https://github.com/anaszakaria/js-frequent#filter-and-map-alternative)
+  - [Array to Object conversion](https://github.com/anaszakaria/js-frequent#array-to-object-conversion)
+- [Array Sort](https://github.com/anaszakaria/js-frequent#array-sort)
+  - [Sort array by value with options (ascending and descending)](https://github.com/anaszakaria/js-frequent#sort-array-by-value-with-options-ascending-and-descending)
+- [Object](https://github.com/anaszakaria/js-frequent#object)
+  - [Loop through object and get key value pairs](https://github.com/anaszakaria/js-frequent#loop-through-object-and-get-key-value-pairs)
+  - [Recursive function - Retrieve nested obj key value](https://github.com/anaszakaria/js-frequent#recursive-function---retrieve-nested-obj-key-value)
+  - [Convert object to array](https://github.com/anaszakaria/js-frequent#convert-object-to-array)
+  - [Merge object into another object and overwrite the original value if exists](https://github.com/anaszakaria/js-frequent#merge-object-into-another-object-and-overwrite-the-original-value-if-exists)
+  - [Find path of nested object](https://github.com/anaszakaria/js-frequent#find-path-of-nested-object)
+- [Set](https://github.com/anaszakaria/js-frequent#set)
+  - [Set operations - Subset, Union, Intersection, Symmetric Difference and Difference](https://github.com/anaszakaria/js-frequent#set-operations---subset-union-intersection-symmetric-difference-and-difference)
+- [Array Destructuring](https://github.com/anaszakaria/js-frequent#array-destructuring)
+  - [Tic Tac Toe algorithm comparison](https://github.com/anaszakaria/js-frequent#tic-tac-toe-algorithm-comparison)
 
 ## Array Filter
 
