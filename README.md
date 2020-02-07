@@ -35,7 +35,7 @@ List of frequently used Javascript functions
 
 ## Array Filter
 
-### Filter array content based on search criteria
+#### Filter array content based on search criteria
 
 ```
 const fruits = ['apple', 'banana', 'grapes', 'mango', 'orange']
@@ -50,7 +50,7 @@ console.log(filterItems(fruits, 'ap')) // ['apple', 'grapes']
 console.log(filterItems(fruits, 'an')) // ['banana', 'mango', 'orange']
 ```
 
-### Find unique values in array
+#### Find unique values in array
 
 ```
 const words = ['dog', 'cat', 'cat', 'dog', 'chicken', 'dog', 'whale']
@@ -64,7 +64,7 @@ const getUniqueWords = array => {
 console.log(getUniqueWords(words)) // ["dog", "cat", "chicken", "whale"]
 ```
 
-### Remove false value - undefined, null and false
+#### Remove false value - undefined, null and false
 
 ```
 const defArray = [undefined, null, null, 'Whale', 'Tiger', false, 434, '', 32.0]
@@ -76,7 +76,7 @@ const removeFalseValue = (array) => {
 console.log(removeFalseValue(defArray))
 ```
 
-### Find differences - returns the values from array that are not present in the other arrays
+#### Find differences - returns the values from array that are not present in the other arrays
 
 ```
 const arrays = [[1, 2, 3, 4, 5], [5, 2, 10]]
@@ -92,7 +92,7 @@ const findDifference = (array) => {
 console.log(findDifference(arrays)) // output: [1, 3, 4]
 ```
 
-### Sorts an array of object based on an object key provided by a parameter
+#### Sorts an array of object based on an object key provided by a parameter
 
 ```
 const fruits = [
@@ -109,7 +109,7 @@ const sortBy = (key) => {
 console.log(fruits.concat().sort(sortBy('name')))
 ```
 
-### Non recursive flatten deep using a stack
+#### Non recursive flatten deep using a stack
 
 ```
 const nestedArray = [1,2,3,[1,2,3,4, [2,3,4]]]
@@ -134,7 +134,7 @@ const flatten = array => {
 console.log(flatten(nestedArray)) // [1, 2, 3, 1, 2, 3, 4, 2, 3, 4]
 ```
 
-### Find indices of elements in an array
+#### Find indices of elements in an array
 
 ```
 let indices = []
@@ -150,7 +150,7 @@ while (itemIndex !== -1) {
 console.log(indices.reverse()) // [0, 2, 4]
 ```
 
-### Find boolean value in array - 0, null, undefined will result in false
+#### Find boolean value in array - 0, null, undefined will result in false
 
 ```
 const items = [0, null, undefined, 1, -1, '22', 'str']
@@ -161,7 +161,7 @@ console.log(booleanItems) // [false, false, false, true, true, true, true]
 
 ## Array Reduce
 
-### Find the maximum or minimum collection item
+#### Find the maximum or minimum collection item
 
 ```
 const data = [
@@ -175,7 +175,7 @@ const maxItem = data.reduce((a, b) => { return a.value >= b.value ? a : b }, {})
 console.log(minItem, maxItem) // output: { value: 2 }, { value: 6 }
 ```
 
-### Count instance of values in object
+#### Count instance of values in object
 
 ```
 const names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice', 'Jack', 'Tiff', 'Jack', 'Alice']
@@ -192,7 +192,7 @@ const countedNames = names.reduce((countObj, name) => {
 console.log(countedNames) // {Alice: 3, Bob: 1, Tiff: 2, Bruce: 1, Jack: 2}
 ```
 
-### Grouping objects by a property
+#### Grouping objects by a property
 
 ```
 const people = [
@@ -216,7 +216,7 @@ const groupBy = (objectArray, property) => {
 console.log(groupBy(people, 'job'))
 ```
 
-### Bonding arrays contained in an array of objects using the spread operator and initial value
+#### Bonding arrays contained in an array of objects using the spread operator and initial value
 
 ```
 const person = [
@@ -232,7 +232,7 @@ const bookLists = person.reduce((array, obj) => {
 console.log(bookLists) // ["New Book", "Bible", "Harry Potter", "War and peace", "Romeo and Juliet", "The Lord of the Rings", "The Shining"]
 ```
 
-### Remove duplicate items in array
+#### Remove duplicate items in array
 
 ```
 const words = ['a', 'b', 'a', 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd']
@@ -247,7 +247,7 @@ const removeDuplicate = words.reduce((accumulator, currentValue) => {
 console.log(removeDuplicate) // ["a", "b", "c", "e", "d"]
 ```
 
-### Function composition enabling pipe functionality
+#### Function composition enabling pipe functionality
 
 ```
 const double = x => x + x
@@ -270,7 +270,7 @@ console.log(multiply16(16))
 console.log(multiply24(10))
 ```
 
-### Flattened array using recursive function
+#### Flattened array using recursive function
 
 ```
 const nestedArray = [1,2,3,[1,2,3,4, [2,3,4]]]
@@ -282,7 +282,7 @@ const flattenDeep = array => {
 console.log(flattenDeep(nestedArray)) // [1, 2, 3, 1, 2, 3, 4, 2, 3, 4]
 ```
 
-### Filter and Map alternative
+#### Filter and Map alternative
 
 ```
 const studentsData = [
@@ -301,7 +301,7 @@ const topStudents = studentsData.reduce((nameList, student) => {
 console.log(topStudents) // ['Lionel Messi', 'Cristiano Ronaldo']
 ```
 
-### Array to Object conversion
+#### Array to Object conversion
 
 ```
 const stats = [
@@ -336,7 +336,7 @@ console.log(keyInfo)
 
 ## Array Sort
 
-### Sort array by value with options (ascending and descending)
+#### Sort array by value with options (ascending and descending)
 
 ```
 const info = [
@@ -428,7 +428,7 @@ console.log('Info:', info) // default array is not mutated
 
 ## Object
 
-### Loop through object and get key value pairs
+#### Loop through object and get key value pairs
 
 ```
 const calculation = {
@@ -447,7 +447,7 @@ for (const [key, value] of objArray) {
 }
 ```
 
-### Recursive function - Retrieve nested obj key value
+#### Recursive function - Retrieve nested obj key value
 
 ```
 const person = {
@@ -485,7 +485,7 @@ iterateObj(person, (key, value) => {
 })
 ```
 
-### Convert object to array
+#### Convert object to array
 
 ```
 const postAuthors = {
@@ -496,7 +496,7 @@ const postAuthors = {
 console.log(Object.values(postAuthors))
 ```
 
-### Merge object into another object and overwrite the original value if exists
+#### Merge object into another object and overwrite the original value if exists
 
 ```
 const sourceObject = {
@@ -523,7 +523,7 @@ const finalObject = Object.assign({}, sourceObject, { // create new object
 console.log(finalObject) // note: sourceObject is a separate object from finalObject in this scenario
 ```
 
-### Find path of nested object
+#### Find path of nested object
 
 ```
 const projects = [
@@ -570,7 +570,7 @@ console.log(path) // ["DEPT_IT", "WEB", "EQMP"]
 
 ## Set
 
-### Set operations - Subset, Union, Intersection, Symmetric Difference and Difference
+#### Set operations - Subset, Union, Intersection, Symmetric Difference and Difference
 
 ```
 let setA = new Set([1, 2, 3, 4])
@@ -665,7 +665,7 @@ console.log(numArray) // [11, 22, 33, 1, 4]
 
 ## Array Destructuring
 
-### Tic Tac Toe algorithm comparison
+#### Tic Tac Toe algorithm comparison
 
 ```
 const matched = [
